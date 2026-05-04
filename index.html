@@ -6,288 +6,303 @@
 <title>AngelFaces – Children English</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after {
-     box-sizing: border-box; margin: 0; padding: 0; 
-    }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --purple: #7B4FBF;
-    --purple-dark: #5C3A9A;
-    --orange: #F5841F;
-    --yellow: #FFD600;
-    --green: #3CC87A;
-    --light: #F6F3FF;
-    --white: #fff;
-    --text: #2d2247;
-    --text-muted: #7a6fa8;
-    --radius: 20px;
-    --shadow: 0 8px 32px rgba(100,60,180,0.13);
-  }
-
-  body {
-    font-family: 'Nunito', sans-serif;
-    background: var(--light);
-    color: var(--text);
-    min-height: 100vh;
-  }
-
-  nav {
-    background: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 40px;
-    box-shadow: 0 2px 12px rgba(120,80,200,0.07);
-    position: sticky; top: 0; z-index: 100;
-  }
-  .nav-logo {
-     font-size: 22px;
-      font-weight: 900; 
-      color: var(--purple); 
-      letter-spacing: -0.5px; }
-
-  .nav-logo span { 
-    color: var(--orange);
- }
-  .nav-links { 
-    display: flex;
-     gap: 28px;
-      list-style: none;
- }
-  .nav-links a { text-decoration: none;
-     color: var(--text-muted);
-      font-weight: 700; 
-      font-size: 14px;
-       transition: color .2s;
-     }
-  .nav-links a:hover {
-    color: var(--purple); 
+:root {
+  --purple: #7B4FBF;
+  --purple-dark: #5C3A9A;
+  --purple-light: #EDE8F9;
+  --orange: #F5841F;
+  --yellow: #FFD600;
+  --green: #3CC87A;
+  --pink: #FFE8E0;
+  --light: #F4F2FC;
+  --white: #fff;
+  --text: #2d2247;
+  --text-muted: #7a6fa8;
+  --radius: 20px;
+  --shadow: 0 8px 32px rgba(100,60,180,0.11);
 }
-  .nav-btn {
-    background: var(--purple);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 24px;
-    font-weight: 800;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background .2s, transform .15s;
-  }
-  .nav-btn:hover { 
-    background: var(--purple-dark); transform: translateY(-1px);
- }
 
-  .hero {
-    background: linear-gradient(135deg, var(--purple) 60%, #9966e5 100%);
-    border-radius: var(--radius);
-    margin: 28px 40px;
-    padding: 40px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    min-height: 220px;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -40px; right: 220px;
-    width: 300px; height: 300px;
-    background: rgba(82, 54, 54, 0.06);
-    border-radius: 50%;
-  }
-  .hero-left { 
-    max-width: 420px; z-index: 1;
- }
-  .hero-title {
-    font-size: 28px;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1.25;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-  }
-  .hero-title .highlight {
-     color: var(--orange);
-     }
-  .hero-desc {
-    font-size: 13.5px;
-    color: rgba(255,255,255,0.88);
-    font-weight: 600;
-    line-height: 1.6;
-    margin-bottom: 22px;
-  }
-  .hero-btn {
-    background: var(--white);
-    color: var(--purple);
-    border: none;
-    border-radius: 30px;
-    padding: 11px 26px;
-    font-weight: 800;
-    font-size: 14px;
-    cursor: pointer;
-    transition: transform .15s, box-shadow .15s;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  }
-  .hero-btn:hover {
-     transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-     }
-  .hero-delivery {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-    color: rgba(255,255,255,0.75);
-    font-size: 12.5px;
-    font-weight: 600;
-  }
-  .hero-delivery .truck { font-size: 18px; }
+html { scroll-behavior: smooth; }
 
-  .badge {
-    position: absolute;
-    top: 22px; right: 230px;
-    background: var(--orange);
-    color: #fff;
-    font-size: 11px;
-    font-weight: 900;
-    border-radius: 50%;
-    width: 58px; height: 58px;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    line-height: 1.1;
-    box-shadow: 0 4px 12px rgba(245,132,31,0.4);
-    z-index: 2;
-  }
-  .badge .big { font-size: 18px; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--light);
+  color: var(--text);
+}
 
-  .hero-books {
-    position: relative;
-    width: 200px;
-    height: 180px;
-    flex-shrink: 0;
-    z-index: 1;
-  }
-  .book-card {
-    position: absolute;
-    width: 110px;
-    background: linear-gradient(160deg, #ff6b35, #ff4500);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 13px;
-    color: #fff;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-    padding: 10px;
-    text-align: center;
-    transition: transform .3s;
-  }
-  .book-card:hover { transform: scale(1.05) rotate(-2deg); }
-  .book-card.b1 { bottom: 0; left: 20px; height: 140px; background: linear-gradient(160deg, #e63c2f, #c42b20); transform: rotate(-6deg); }
-  .book-card.b2 { bottom: 10px; left: 55px; height: 145px; background: linear-gradient(160deg, #f5841f, #e06b10); transform: rotate(-1deg); z-index: 2; }
-  .book-card.b3 { bottom: 20px; left: 88px; height: 140px; background: linear-gradient(160deg, #2eaa6e, #1d8a55); transform: rotate(5deg); }
-  .book-label { font-size: 11px; font-weight: 900; text-align: center; }
+nav {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 48px;
+  box-shadow: 0 2px 16px rgba(120,80,200,0.07);
+  position: sticky; top: 0; z-index: 200;
+}
+.nav-logo { font-size: 22px; font-weight: 900; color: var(--purple); }
+.nav-logo span { color: var(--orange); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 700; font-size: 14px; transition: color .2s; }
+.nav-links a:hover { color: var(--purple); }
+.nav-right { display: flex; align-items: center; gap: 12px; }
+.nav-lang { font-size: 13px; font-weight: 700; color: var(--text-muted); }
+.nav-btn { background: transparent; color: var(--purple); border: 2px solid var(--purple); border-radius: 30px; padding: 8px 22px; font-weight: 800; font-size: 13px; cursor: pointer; transition: all .2s; font-family: 'Nunito', sans-serif; }
+.nav-btn:hover { background: var(--purple); color: #fff; }
 
-  .hero-arrows {
-    position: absolute;
-    bottom: 20px; right: 24px;
-    display: flex; gap: 8px;
-  }
-  .arrow-btn {
-    width: 34px; height: 34px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.5);
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    transition: background .2s;
-  }
-  .arrow-btn:hover {
-     background: rgba(255,255,255,0.3);
-     }
+.hero {
+  background: linear-gradient(130deg, #7B4FBF 55%, #9B6FDF 100%);
+  border-radius: 24px;
+  margin: 28px 40px;
+  padding: 44px 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  min-height: 230px;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -60px; right: 260px;
+  width: 340px; height: 340px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+.hero-left { max-width: 430px; z-index: 1; }
+.hero-title { font-size: 27px; font-weight: 900; color: #fff; line-height: 1.2; margin-bottom: 8px; text-transform: uppercase; }
+.hero-title .hl { color: var(--orange); }
+.hero-desc { font-size: 13.5px; color: rgba(255,255,255,0.86); font-weight: 600; line-height: 1.65; margin-bottom: 22px; }
+.hero-btn { background: #fff; color: var(--purple); border: none; border-radius: 30px; padding: 11px 28px; font-weight: 800; font-size: 14px; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.15); transition: transform .15s, box-shadow .15s; font-family: 'Nunito', sans-serif; }
+.hero-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.2); }
+.hero-delivery { display: flex; align-items: center; gap: 8px; margin-top: 14px; color: rgba(255,255,255,0.72); font-size: 12.5px; font-weight: 600; }
 
-  .section {
-    margin: 0 40px 40px;
-    display: flex;
-    gap: 32px;
-    align-items: flex-start;
-  }
+.badge {
+  position: absolute; top: 22px; right: 240px;
+  background: var(--orange); color: #fff;
+  font-size: 11px; font-weight: 900;
+  border-radius: 50%; width: 60px; height: 60px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  line-height: 1.1; box-shadow: 0 4px 14px rgba(245,132,31,0.45); z-index: 2;
+}
+.badge .big { font-size: 19px; }
 
-  .lang-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 28px;
-    min-width: 200px;
-    box-shadow: var(--shadow);
-    flex-shrink: 0;
-  }
-  .lang-title { font-size: 22px; font-weight: 900; color: var(--text); }
-  .lang-sub { font-size: 13px; color: var(--orange); font-weight: 700; margin-bottom: 16px; }
-  .flags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-  .flag { font-size: 26px; cursor: pointer; transition: transform .15s; }
-  .flag:hover { transform: scale(1.2); }
-  .lang-btn {
-    background: var(--purple);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 11px 22px;
-    font-weight: 800;
-    font-size: 13px;
-    cursor: pointer;
-    width: 100%;
-    transition: background .2s, transform .15s;
-  }
-  .lang-btn:hover { background: var(--purple-dark); transform: translateY(-1px); }
+.hero-books { position: relative; width: 210px; height: 185px; flex-shrink: 0; z-index: 1; }
+.hbook {
+  position: absolute; width: 115px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 12px; color: #fff;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.28); padding: 10px; text-align: center;
+  transition: transform .3s;
+}
+.hbook:hover { transform: scale(1.06) !important; }
+.hbook.b1 { height: 140px; bottom: 0; left: 16px; background: linear-gradient(160deg,#e63c2f,#c42b20); transform: rotate(-7deg); }
+.hbook.b2 { height: 148px; bottom: 8px; left: 50px; background: linear-gradient(160deg,#f5841f,#d96a0e); transform: rotate(-1deg); z-index: 2; }
+.hbook.b3 { height: 138px; bottom: 16px; left: 86px; background: linear-gradient(160deg,#2eaa6e,#1c8450); transform: rotate(6deg); }
+.hbook-label { font-size: 11.5px; font-weight: 900; line-height: 1.2; }
 
-  .books-grid {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  .book-item {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 20px 18px;
-    text-align: center;
-    box-shadow: var(--shadow);
-    width: 160px;
-    transition: transform .2s, box-shadow .2s;
-    cursor: pointer;
-  }
-  .book-item:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(100,60,180,0.18); }
-  .book-cover {
-    width: 100px; height: 120px;
-    border-radius: 8px;
-    margin: 0 auto 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 900; font-size: 12px; color: #fff;
-    position: relative;
-    overflow: hidden;
-  }
-  .book-cover.c1 { background: linear-gradient(160deg, #e63c2f, #c42b20); }
-  .book-cover.c2 { background: linear-gradient(160deg, #f5841f, #e06b10); }
-  .book-cover.c3 { background: linear-gradient(160deg, #2eaa6e, #1d8a55); }
-  .book-cover-title { font-size: 15px; font-weight: 900; line-height: 1.1; text-align: center; }
-  .book-cover-sub { font-size: 10px; opacity: 0.85; margin-top: 4px; }
-  .book-name { font-size: 13px; font-weight: 800; color: var(--text); }
-  .book-series { font-size: 11px; font-weight: 700; color: var(--orange); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+.hero-arrows { position: absolute; bottom: 22px; right: 28px; display: flex; gap: 8px; }
+.arr { width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.45); background: rgba(255,255,255,0.12); color: #fff; font-size: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s; }
+.arr:hover { background: rgba(255,255,255,0.28); }
 
-  .book-item.pink { background: #FFF3F0; }
+.section-row { display: flex; gap: 28px; margin: 0 40px 36px; align-items: flex-start; }
 
-  @media (max-width: 700px) {
-    nav { padding: 12px 16px; }
-    .nav-links { display: none; }
-    .hero { margin: 16px; padding: 24px 20px; flex-direction: column; gap: 20px; }
-    .section { flex-direction: column; margin: 0 16px 28px; }
-    .books-grid { justify-content: center; }
-  }
+.lang-card { background: var(--white); border-radius: var(--radius); padding: 28px; min-width: 200px; box-shadow: var(--shadow); flex-shrink: 0; }
+.lang-title { font-size: 23px; font-weight: 900; }
+.lang-sub { font-size: 13px; color: var(--orange); font-weight: 700; margin-bottom: 16px; }
+.flags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.flag { font-size: 28px; cursor: pointer; transition: transform .15s; }
+.flag:hover { transform: scale(1.18); }
+.lang-btn { background: var(--purple); color: #fff; border: none; border-radius: 30px; padding: 11px 0; font-weight: 800; font-size: 13px; cursor: pointer; width: 100%; font-family: 'Nunito', sans-serif; transition: background .2s; }
+.lang-btn:hover { background: var(--purple-dark); }
+
+.books-grid { display: flex; gap: 16px; flex-wrap: wrap; }
+.book-item { background: var(--white); border-radius: var(--radius); padding: 20px 18px; text-align: center; box-shadow: var(--shadow); width: 162px; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+.book-item:hover { transform: translateY(-6px); box-shadow: 0 18px 44px rgba(100,60,180,0.18); }
+.book-item.pink { background: #FFF5F0; }
+.book-cover { width: 100px; height: 122px; border-radius: 8px; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; color: #fff; }
+.bc1 { background: linear-gradient(150deg,#e63c2f,#c42b20); 
+width: 175.0012664794922;
+height: 256;
+top: 24px;
+left: 53px;
+opacity: 1;
+}
+.bc2 { background: linear-gradient(150deg,#f5841f,#d96a0e); }
+.bc3 { background: linear-gradient(150deg,#2eaa6e,#1c8450); }
+.bc-text { font-weight: 900; font-size: 13px; text-align: center; line-height: 1.2; }
+.bc-num { font-size: 10px; margin-top: 4px; opacity: .85; }
+.book-name { font-size: 13px; font-weight: 800; }
+.book-series { font-size: 11px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: .5px; margin-top: 2px; }
+
+.pen-section {
+  margin: 0 40px 36px;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  box-shadow: var(--shadow);
+}
+.pen-visual { position: relative; flex-shrink: 0; }
+.pen-circle {
+  width: 230px; height: 230px; border-radius: 50%;
+  background: linear-gradient(135deg, #FBCFB0 0%, #F9A97E 100%);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.pen-img { font-size: 80px; filter: drop-shadow(0 8px 20px rgba(0,0,0,0.15)); }
+.wave { position: absolute; border-radius: 50%; border: 2px solid rgba(123,79,191,0.18); animation: ripple 2s infinite ease-out; }
+.wave:nth-child(2) { width: 260px; height: 260px; top: -15px; left: -15px; animation-delay: 0s; }
+.wave:nth-child(3) { width: 300px; height: 300px; top: -35px; left: -35px; animation-delay: .5s; }
+.wave:nth-child(4) { width: 340px; height: 340px; top: -55px; left: -55px; animation-delay: 1s; }
+@keyframes ripple { 0%{opacity:.6;transform:scale(.92);} 100%{opacity:0;transform:scale(1.08);} }
+
+.video-btn {
+  position: absolute; bottom: 10px; left: -10px;
+  background: var(--white); border-radius: 30px; padding: 8px 16px;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 700; color: var(--purple);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); cursor: pointer;
+  white-space: nowrap;
+}
+.play-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--purple); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 11px; }
+
+.pen-content h2 { font-size: 28px; font-weight: 900; color: var(--purple); text-transform: uppercase; margin-bottom: 20px; line-height: 1.2; }
+.pen-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+.pen-features li { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: var(--text); }
+.pen-features li::before { content: '☆'; color: var(--orange); font-size: 16px; }
+.pen-buy { background: var(--purple); color: #fff; border: none; border-radius: 30px; padding: 12px 30px; font-weight: 800; font-size: 14px; cursor: pointer; font-family: 'Nunito', sans-serif; transition: background .2s, transform .15s; }
+.pen-buy:hover { background: var(--purple-dark); transform: translateY(-2px); }
+
+.steps-banner { margin: 0 40px 36px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.step-card { border-radius: 20px; padding: 24px; display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 800; color: #fff; position: relative; overflow: hidden; }
+.step-card::after { content: ''; position: absolute; bottom: -20px; right: -20px; width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,0.12); }
+.step-card.s1 { background: linear-gradient(135deg, #F97B4B, #E05A2B); }
+.step-card.s2 { background: linear-gradient(135deg, #7B4FBF, #5C3A9A); }
+.step-card.s3 { background: linear-gradient(135deg, #3CC87A, #28A862); }
+.step-icon { font-size: 28px; flex-shrink: 0; }
+.step-num { font-size: 11px; font-weight: 700; opacity: .75; margin-bottom: 2px; }
+
+.who-section { margin: 0 40px 36px; }
+.section-title { font-size: 28px; font-weight: 900; margin-bottom: 6px; }
+.section-sub { font-size: 14px; color: var(--text-muted); font-weight: 600; margin-bottom: 24px; }
+.who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.who-card { background: var(--white); border-radius: 20px; padding: 24px; box-shadow: var(--shadow); transition: transform .2s; position: relative; overflow: hidden; }
+.who-card:hover { transform: translateY(-4px); }
+.who-card.teal { background: #E8F8F1; }
+.who-card.peach { background: #FFF0E8; }
+.who-card.lavender { background: var(--purple-light); }
+.who-card.mint { background: #E8F8F3; }
+.who-card.sky { background: #E8F4FF; }
+.who-icon { font-size: 28px; margin-bottom: 10px; }
+.who-title { font-size: 14px; font-weight: 900; color: var(--purple); margin-bottom: 6px; }
+.who-desc { font-size: 12.5px; color: var(--text-muted); font-weight: 600; line-height: 1.55; }
+.who-bg-icon { position: absolute; bottom: -10px; right: -10px; font-size: 60px; opacity: .07; }
+
+.marquee-wrap {
+  margin: 0 0 36px;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+.marquee-inner { display: flex; gap: 0; }
+.marquee-item {
+  padding: 16px 32px;
+  font-size: 15px; font-weight: 900; text-transform: uppercase; letter-spacing: .5px;
+  white-space: nowrap;
+}
+.marquee-row { display: flex; }
+.marquee-row.row1 { background: var(--purple); color: #fff; transform: rotate(-1.5deg) translateY(-4px); }
+.marquee-row.row2 { background: var(--orange); color: #fff; transform: rotate(1deg) translateY(4px); }
+@keyframes marquee { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+
+.audio-section { margin: 0 40px 36px; }
+.audio-section .section-title { font-size: 30px; }
+.timeline { display: flex; align-items: flex-start; gap: 0; margin-top: 32px; position: relative; }
+.timeline::before { content: ''; position: absolute; top: 28px; left: 40px; right: 40px; height: 3px; background: linear-gradient(90deg, var(--orange), var(--purple), var(--green), var(--yellow)); border-radius: 2px; }
+.tl-step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; position: relative; z-index: 1; }
+.tl-dot { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; color: #fff; box-shadow: 0 4px 16px rgba(0,0,0,0.15); flex-shrink: 0; }
+.td1 { background: var(--orange); }
+.td2 { background: var(--purple); }
+.td3 { background: var(--green); }
+.td4 { background: var(--yellow); color: var(--text); }
+.tl-text { font-size: 12.5px; color: var(--text-muted); font-weight: 600; line-height: 1.55; max-width: 130px; }
+
+.order-section { margin: 0 40px 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--white); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); }
+.order-left { background: var(--purple-light); padding: 40px; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+.order-left::after { content: ''; position: absolute; bottom: -40px; right: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(123,79,191,0.1); }
+.order-discount { font-size: 13px; font-weight: 700; color: var(--text-muted); margin-bottom: 4px; }
+.order-title { font-size: 26px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+.order-title .pct { color: var(--orange); }
+.order-dates { font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 20px; }
+.order-dates span { color: var(--text); font-weight: 800; }
+.order-label2 { font-size: 13px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }
+.order-price-old { font-size: 16px; font-weight: 700; color: var(--text-muted); text-decoration: line-through; }
+.order-price-new { font-size: 26px; font-weight: 900; color: var(--orange); }
+.order-books { position: absolute; right: -20px; bottom: 10px; display: flex; gap: -10px; }
+.ob { width: 70px; height: 90px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 900; color: #fff; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+.ob1 { background: linear-gradient(150deg,#e63c2f,#c42b20); transform: rotate(-6deg) translateX(10px); }
+.ob2 { background: linear-gradient(150deg,#f5841f,#d96a0e); z-index: 1; }
+
+.order-right { padding: 40px; }
+.order-right h3 { font-size: 20px; font-weight: 900; margin-bottom: 24px; text-transform: uppercase; }
+.form-field { margin-bottom: 16px; }
+.form-field input { width: 100%; border: none; border-bottom: 2px solid #E0D8F0; padding: 10px 4px; font-size: 14px; font-family: 'Nunito', sans-serif; color: var(--text); outline: none; background: transparent; transition: border-color .2s; }
+.form-field input:focus { border-bottom-color: var(--purple); }
+.form-field input::placeholder { color: var(--text-muted); font-weight: 600; }
+.form-check { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; font-size: 12.5px; color: var(--text-muted); font-weight: 600; line-height: 1.5; }
+.form-check input { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--purple); flex-shrink: 0; }
+.form-submit { background: var(--purple); color: #fff; border: none; border-radius: 30px; padding: 13px 36px; font-weight: 800; font-size: 15px; cursor: pointer; font-family: 'Nunito', sans-serif; transition: background .2s, transform .15s; }
+.form-submit:hover { background: var(--purple-dark); transform: translateY(-2px); }
+
+.testimonials { margin: 0 40px 36px; }
+.test-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.test-arrows { display: flex; gap: 8px; }
+.tarr { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--purple); background: transparent; color: var(--purple); font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+.tarr:hover { background: var(--purple); color: #fff; }
+.tarr.active { background: var(--purple); color: #fff; }
+.test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.test-card { background: var(--white); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.test-user { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.test-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--purple-light); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 900; color: var(--purple); flex-shrink: 0; }
+.test-name { font-size: 13px; font-weight: 800; }
+.test-book { font-size: 11px; color: var(--orange); font-weight: 700; }
+.test-text { font-size: 12.5px; color: var(--text-muted); font-weight: 600; line-height: 1.6; }
+
+footer {
+  background: var(--white);
+  border-top: 1px solid #EDE8F9;
+  padding: 28px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-links { display: flex; gap: 28px; list-style: none; }
+.foot-links a { text-decoration: none; color: var(--text-muted); font-size: 13px; font-weight: 700; transition: color .2s; }
+.foot-links a:hover { color: var(--purple); }
+.foot-social { display: flex; gap: 12px; align-items: center; }
+.soc { width: 34px; height: 34px; border-radius: 50%; background: var(--purple-light); color: var(--purple); display: flex; align-items: center; justify-content: center; font-size: 15px; cursor: pointer; transition: background .2s, transform .15s; text-decoration: none; }
+.soc:hover { background: var(--purple); color: #fff; transform: translateY(-2px); }
+.foot-social-label { font-size: 12px; font-weight: 700; color: var(--text-muted); margin-right: 4px; }
+
+@media(max-width:768px){
+  nav{padding:12px 16px;} .nav-links{display:none;}
+  .hero{margin:16px;padding:24px 20px;flex-direction:column;}
+  .section-row{flex-direction:column;margin:0 16px 28px;}
+  .pen-section{flex-direction:column;margin:0 16px 28px;padding:28px 20px;gap:28px;}
+  .steps-banner,.who-grid,.test-grid{grid-template-columns:1fr;margin:0 16px 28px;}
+  .order-section{grid-template-columns:1fr;}
+  .timeline::before{display:none;}
+  .timeline{flex-direction:column;gap:20px;}
+  footer{flex-direction:column;gap:16px;}
+}
 </style>
 </head>
 <body>
@@ -295,102 +310,286 @@
 <nav>
   <div class="nav-logo">Angel<span>Faces</span></div>
   <ul class="nav-links">
-    <li><a href="#">Bosh sahifa</a></li>
-    <li><a href="#">Kitoblar</a></li>
-    <li><a href="#">Haqimizda</a></li>
-    <li><a href="#">Aloqa</a></li>
+    <li><a href="#">Glavnaya</a></li>
+    <li><a href="#">Proyektı ▾</a></li>
+    <li><a href="#">Servisı ▾</a></li>
+    <li><a href="#">Kontaktı</a></li>
   </ul>
-  <button class="nav-btn">Buyurtma berish</button>
+  <div class="nav-right">
+    <span class="nav-lang">UZb ▾</span>
+    <button class="nav-btn">Biz bilan bog'lanish</button>
+  </div>
 </nav>
 
 <div class="hero">
   <div class="badge"><span class="big">10%</span><span>CHEGIRMA</span></div>
-
   <div class="hero-left">
-    <div class="hero-title">
-      ANGELFACES TO'PLAMINI<br>
-      <span class="highlight">10%</span> CHEGIRMA BILAN<br>
-      SOTIB OLING.
-    </div>
-    <div class="hero-desc">
-      Ingliz, Rus, Xitoy, Fransuz, Kares, Ispan,<br>
-      O'zbek va Arab tillarini tez va oson o'rganing!
-    </div>
+    <div class="hero-title">ANGELFACES TO'PLAMINI<br><span class="hl">10%</span> CHEGIRMA BILAN<br>SOTIB OLING.</div>
+    <div class="hero-desc">Ingliz, Rus, Xitoy, Fransuz, Kares, Ispan,<br>O'zbek va Arab tillarini tez va oson o'rganing!</div>
     <button class="hero-btn">Buyurtma berish</button>
-    <div class="hero-delivery">
-      <span class="truck">🚚</span>
-      Buyurtmangiz 48 soatda yetib borinassi tekinga olasiz
-    </div>
+    <div class="hero-delivery">🚚 Buyurtmangiz 48 soatda yetib borinassi tekinga olasiz</div>
   </div>
-
   <div class="hero-books">
-    <div class="book-card b1">
-      <div class="book-label">CHILDREN<br>ENGLISH</div>
-    </div>
-    <div class="book-card b2">
-      <div class="book-label">CHILDREN<br>ENGLISH</div>
-    </div>
-    <div class="book-card b3">
-      <div class="book-label">CHILDREN<br>ENGLISH</div>
-    </div>
+    <div class="hbook b1"><img src="/Group 39547.png" alt=""><div class="hbook-label">CHILDREN<br>ENGLISH</div></div>
+    <div class="hbook b2"><img src="/Books 2.png" alt=""><div class="hbook-label">CHILDREN<br>ENGLISH</div></div>
+    <div class="hbook b3"><img src="c:\Users\AliCom\Downloads\Group 39546.png" alt=""><div class="hbook-label">CHILDREN<br>ENGLISH</div></div>
   </div>
-
   <div class="hero-arrows">
+    <button class="arr">&#8592;</button>
+    <button class="arr">&#8594;</button>
   </div>
 </div>
 
-<div class="section">
+<div class="section-row">
   <div class="lang-card">
     <div class="lang-title">8ta tilda</div>
     <div class="lang-sub">Ingliz tilini o'rganing</div>
     <div class="flags">
-      <span class="flag"><img src="/image 71 (1).png" alt=""></span>
-      <span class="flag"><img src="/image 72.png" alt=""></span>
-      <span class="flag"><img src="/image 74.png" alt=""></span>
-      <span class="flag"><img src="/image 77.png" alt=""></span>
-      <span class="flag"><img src="france.png" alt=""></span>
-      <span class="flag"><img src="/korea.png" alt=""></span>
-      <span class="flag"><img src="ispanya.png" alt=""><span>
-      <span class="flag"><img src="image 59.png" alt=""></span>
+      <span class="flag"><img src="/image 71 (1).png" alt=""></span><span class="flag"><img src="/image 72.png" alt=""></span>
+      <span class="flag"><img src="/image 74.png" alt=""></span><span class="flag"><img src="image 77.png" alt=""></span>
+      <span class="flag"><img src="/france.png" alt=""></span><span class="flag"><img src="/korea.png" alt=""></span>
+      <span class="flag"><img src="/image 59.png" alt=""></span><span class="flag"><img src="/ispanya.png" alt=""></span>
     </div>
     <button class="lang-btn">Buyurtma berish</button>
   </div>
-
   <div class="books-grid">
     <div class="book-item">
-      <div class="book-cover c1">
-        <div>
-          <div class="book-cover-title">CHILDREN<br>ENGLISH</div>
-          <div class="book-cover-sub">BOOK 1</div>
-        </div>
-      </div>
+      <div class="book-cover bc1"><img src="/Books 3.png" alt=""><div class="bc-text">CHILDREN<br>ENGLISH<div class="bc-num">BOOK 1</div></div></div>
       <div class="book-name">Children English</div>
       <div class="book-series">BOOK 1</div>
     </div>
-
     <div class="book-item pink">
-      <div class="book-cover c2">
-        <div>
-          <div class="book-cover-title">CHILDREN<br>ENGLISH</div>
-          <div class="book-cover-sub">BOOK 2</div>
-        </div>
-      </div>
+      <div class="book-cover bc2"><img src="/Group 39548.png" alt=""><div class="bc-text">CHILDREN<br>ENGLISH<div class="bc-num">BOOK 2</div></div></div>
       <div class="book-name">Children English</div>
       <div class="book-series">BOOK 2</div>
     </div>
-
     <div class="book-item">
-      <div class="book-cover c3">
-        <div>
-          <div class="book-cover-title">CHILDREN<br>ENGLISH</div>
-          <div class="book-cover-sub">BOOK 3</div>
-        </div>
-      </div>
+      <div class="book-cover bc3"><img src="/image 79.png" alt=""><div class="bc-text">CHILDREN<br>ENGLISH<div class="bc-num">BOOK 3</div></div></div>
       <div class="book-name">Children English</div>
       <div class="book-series">BOOK 3</div>
     </div>
   </div>
 </div>
+
+<div class="pen-section">
+  <div class="pen-visual">
+    <div class="pen-circle">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="pen-img">🖊️</div>
+    </div>
+    <div class="video-btn">
+      <div class="play-icon">▶</div>
+      Videosini ko'rish
+    </div>
+  </div>
+  <div class="pen-content">
+    <h2>OVOZ CHIQARUVCHI<br>RUCHKA</h2>
+    <ul class="pen-features">
+      <li>Sifatli 3D audio orqali</li>
+      <li>Hech qanday grammatik qoidalarsiz</li>
+      <li>So'z yodlashlarsiz</li>
+      <li>Istalgan joyda va istalgan vaqtda</li>
+    </ul>
+    <button class="pen-buy">Buyurtma berish</button>
+  </div>
+</div>
+
+<div class="steps-banner" style="margin:0 40px 36px;">
+  <div class="step-card s1">
+    <div class="step-icon">📋</div>
+    <div><div class="step-num">1. Qadam</div>Saytda Buyurtma qoldiring</div>
+  </div>
+  <div class="step-card s2">
+    <div class="step-icon">📞</div>
+    <div><div class="step-num">2. Qadam</div>Biz siz bilan bog'lanamiz</div>
+  </div>
+  <div class="step-card s3">
+    <div class="step-icon">🚚</div>
+    <div><div class="step-num">3. Qadam</div>Manzilingizga 48 soat ichida yetkazib beramiz</div>
+  </div>
+</div>
+
+<div class="who-section" style="margin:0 40px 36px;">
+  <div class="section-title">ROBOT USTOZ<br>KIMLAR UCHUN</div>
+  <div class="section-sub">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+  <div class="who-grid">
+    <div class="who-card teal">
+      <div class="who-icon">👨‍👩‍👧‍👦</div>
+      <div class="who-title">Farzandlari va nevaralari ko'p bo'lgan oilalar</div>
+      <div class="who-desc">uchun atiga bitta to'plam orqali ko'plab bolalar o'rganishi mumkin</div>
+      <div class="who-bg-icon">👨‍👩‍👧</div>
+    </div>
+    <div class="who-card peach">
+      <div class="who-icon">💰</div>
+      <div class="who-title">Qayta va qayta kursga pul to'lab charchagan ota-onalar uchun</div>
+      <div class="who-desc">mablag'ni tejash imkonini beradi</div>
+      <div class="who-bg-icon">💵</div>
+    </div>
+    <div class="who-card lavender">
+      <div class="who-icon">🔍</div>
+      <div class="who-title">Qayta va qayta kurslarga pul sarflashni yechimi qidirganlar uchun</div>
+      <div class="who-desc">eng samarali yechim shu yerda</div>
+      <div class="who-bg-icon">🔎</div>
+    </div>
+    <div class="who-card mint">
+      <div class="who-icon">🌍</div>
+      <div class="who-title">Jahon Tillarini til egalariga (native speaker) o'rganmoqchi bo'lganlar uchun.</div>
+      <div class="who-desc">native darajasiga erish</div>
+      <div class="who-bg-icon">🗺️</div>
+    </div>
+    <div class="who-card sky">
+      <div class="who-icon">🎮</div>
+      <div class="who-title">Qiziqarli o'yinlar, mashqlar hamda ashulalar</div>
+      <div class="who-desc">yordamida o'rganishini hohlovchilar uchun.</div>
+      <div class="who-bg-icon">🎯</div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee-wrap" style="margin-bottom:36px;">
+  <div class="marquee-row row1">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+      </div>
+      <div class="marquee-inner">
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;✦&nbsp;</span>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-row row2" style="margin-top:8px;">
+    <div class="marquee-track" style="animation-direction:reverse;">
+      <div class="marquee-inner">
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+      </div>
+      <div class="marquee-inner">
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+        <span class="marquee-item">ANGELFACES TO'PLAMINI 10% CHEGIRMA BILAN SOTIB OLING. &nbsp;★&nbsp;</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="audio-section" style="margin:0 40px 36px;">
+  <div class="section-title">AUDIO KURS KIMLAR<br>UCHUN FOYDALI?</div>
+  <div class="timeline">
+    <div class="tl-step">
+      <div class="tl-dot td1">01</div>
+      <div class="tl-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot td2">02</div>
+      <div class="tl-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot td3">03</div>
+      <div class="tl-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-dot td4">04</div>
+      <div class="tl-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+  </div>
+</div>
+
+<div class="order-section" style="margin:0 40px 36px;">
+  <div class="order-left">
+    <div class="order-discount">Chegirma boshlanadi: <strong>25 mart</strong></div>
+    <div class="order-discount">Chegirma tugaydi: <strong>24 aprel</strong></div>
+    <div class="order-title" style="margin-top:12px;">SIZNING<br>CHEGIRMANGIZ <span class="pct">10%</span></div>
+    <div style="margin:16px 0 8px;">
+      <div class="order-label2">Audio kurs narxi</div>
+      <div class="order-price-old">1.200.000 so'm</div>
+      <div class="order-price-new">533.000 so'm</div>
+    </div>
+    <div class="order-books">
+      <div class="ob ob1">CHILDREN<br>ENGLISH</div>
+      <div class="ob ob2">CHILDREN<br>ENGLISH</div>
+    </div>
+  </div>
+  <div class="order-right">
+    <h3>BUYURTMA BERISH UCHUN<br>FORMANI TO'LDIRING</h3>
+    <div class="form-field"><input type="text" placeholder="Ism"></div>
+    <div class="form-field"><input type="tel" placeholder="Telefon"></div>
+    <div class="form-check">
+      <input type="checkbox">
+      <span>Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz</span>
+    </div>
+    <button class="form-submit">Buyurtma berish</button>
+  </div>
+</div>
+
+<div class="testimonials">
+  <div class="test-header">
+    <div class="section-title">NATIJALAR</div>
+    <div class="test-arrows">
+      <button class="tarr">&#8592;</button>
+      <button class="tarr active">&#8594;</button>
+    </div>
+  </div>
+  <div class="test-grid">
+    <div class="test-card">
+      <div class="test-user">
+        <div class="test-avatar">A</div>
+        <div>
+          <div class="test-name">Abduyaminov Akmal</div>
+          <div class="test-book">Children English book 1</div>
+        </div>
+      </div>
+      <div class="test-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+    <div class="test-card">
+      <div class="test-user">
+        <div class="test-avatar">A</div>
+        <div>
+          <div class="test-name">Abduyaminov Akmal</div>
+          <div class="test-book">Children English book 1</div>
+        </div>
+      </div>
+      <div class="test-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga ku rslarimiz foydali bo'ladi</div>
+    </div>
+    <div class="test-card">
+      <div class="test-user">
+        <div class="test-avatar">A</div>
+        <div>
+          <div class="test-name">Abduyaminov Akmal</div>
+          <div class="test-book">Children English book 1</div>
+        </div>
+      </div>
+      <div class="test-text">Barcha yoshdaki shu tillarga qiziqadigan barchaga kurslarimiz foydali bo'ladi</div>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-top:36px;">
+  <div class="nav-logo">Angel<span>Faces</span></div>
+  <ul class="foot-links">
+    <li><a href="#">Glavnaya</a></li>
+    <li><a href="#">Proyektı</a></li>
+    <li><a href="#">Servisı</a></li>
+    <li><a href="#">Kontaktı</a></li>
+  </ul>
+  <div class="foot-social">
+    <span class="foot-social-label">Mı v socseti:</span>
+    <a class="soc" href="#">f</a>
+    <a class="soc" href="#">in</a>
+    <a class="soc" href="#">✈</a>
+    <a class="soc" href="#">▶</a>
+  </div>
+</footer>
 
 </body>
 </html>
